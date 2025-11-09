@@ -43,7 +43,7 @@ const Qualification = () => {
         <div className="flex justify-center gap-8 mb-12">
           <Button
             variant={activeTab === "education" ? "default" : "ghost"}
-            className={activeTab === "education" ? "bg-gradient-to-r from-primary to-secondary" : ""}
+            className={activeTab === "education" ? "glass-strong bg-gradient-to-r from-primary to-secondary shadow-lg shadow-primary/20" : "glass border-primary/10"}
             onClick={() => setActiveTab("education")}
           >
             <GraduationCap className="mr-2" size={20} />
@@ -51,7 +51,7 @@ const Qualification = () => {
           </Button>
           <Button
             variant={activeTab === "experience" ? "default" : "ghost"}
-            className={activeTab === "experience" ? "bg-gradient-to-r from-primary to-secondary" : ""}
+            className={activeTab === "experience" ? "glass-strong bg-gradient-to-r from-primary to-secondary shadow-lg shadow-primary/20" : "glass border-primary/10"}
             onClick={() => setActiveTab("experience")}
           >
             <Briefcase className="mr-2" size={20} />
@@ -60,7 +60,7 @@ const Qualification = () => {
         </div>
 
         <div className="relative">
-          <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-border" />
+          <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-primary opacity-30" />
           
           <div className="space-y-12">
             {data.map((item, index) => (
@@ -70,11 +70,11 @@ const Qualification = () => {
                   index % 2 === 0 ? "flex-row" : "flex-row-reverse"
                 }`}
               >
-                <Card className={`glass p-6 flex-1 ${index % 2 === 0 ? "text-right" : ""}`}>
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <Card className={`glass-strong p-6 flex-1 border-primary/10 shadow-lg hover-lift ${index % 2 === 0 ? "text-right" : ""}`}>
+                  <h3 className="text-xl font-semibold mb-2 gradient-text">{item.title}</h3>
                   <p className="text-muted-foreground mb-2">{item.subtitle}</p>
                   {item.description && (
-                    <p className="text-sm text-primary mb-3">{item.description}</p>
+                    <p className="text-sm text-primary mb-3 font-semibold">{item.description}</p>
                   )}
                   <div className={`flex items-center gap-2 text-sm text-muted-foreground ${index % 2 === 0 ? "justify-end" : ""}`}>
                     <Calendar size={16} />
@@ -82,7 +82,7 @@ const Qualification = () => {
                   </div>
                 </Card>
 
-                <div className="w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
+                <div className="w-4 h-4 rounded-full bg-gradient-to-r from-primary to-secondary border-4 border-background shadow-lg shadow-primary/30 z-10" />
 
                 <div className="flex-1" />
               </div>

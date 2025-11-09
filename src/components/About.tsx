@@ -10,19 +10,19 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <Card className="glass p-8 text-center hover-lift">
+          <Card className="glass-strong p-8 text-center hover-lift border-primary/10 shadow-lg">
             <div className="text-4xl mb-4">🎓</div>
             <h3 className="text-xl font-semibold mb-2">Education</h3>
             <p className="text-muted-foreground">BSc Computer Science</p>
           </Card>
 
-          <Card className="glass p-8 text-center hover-lift">
+          <Card className="glass-strong p-8 text-center hover-lift border-primary/10 shadow-lg">
             <div className="text-4xl mb-4">💼</div>
             <h3 className="text-xl font-semibold mb-2">Internships</h3>
             <p className="text-muted-foreground">Data Analytics & Cybersecurity</p>
           </Card>
 
-          <Card className="glass p-8 text-center hover-lift">
+          <Card className="glass-strong p-8 text-center hover-lift border-primary/10 shadow-lg">
             <div className="text-4xl mb-4">🚀</div>
             <h3 className="text-xl font-semibold mb-2">Projects</h3>
             <p className="text-muted-foreground">Full Stack Applications</p>

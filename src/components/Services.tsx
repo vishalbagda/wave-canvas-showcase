@@ -58,12 +58,14 @@ const Services = () => {
           {services.map((service) => {
             const Icon = service.icon;
             return (
-              <Card key={service.id} className="glass p-8 hover-lift">
-                <Icon className="w-12 h-12 text-primary mb-4" />
+              <Card key={service.id} className="glass-strong p-8 hover-lift border-primary/10 shadow-lg">
+                <div className="glass p-4 rounded-full w-fit mb-4">
+                  <Icon className="w-8 h-8 text-primary" />
+                </div>
                 <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
                 <Button
                   variant="ghost"
-                  className="text-primary hover:text-primary/80 p-0"
+                  className="text-primary hover:text-primary/80 p-0 font-semibold"
                   onClick={() => setSelectedService(service.id)}
                 >
                   View More <ArrowRight className="ml-2" size={18} />
@@ -74,9 +76,9 @@ const Services = () => {
         </div>
 
         <Dialog open={!!selectedService} onOpenChange={() => setSelectedService(null)}>
-          <DialogContent className="glass">
+          <DialogContent className="glass-strong border-primary/20 shadow-2xl">
             <DialogHeader>
-              <DialogTitle className="text-2xl">
+              <DialogTitle className="text-2xl gradient-text">
                 {services.find((s) => s.id === selectedService)?.title}
               </DialogTitle>
             </DialogHeader>
@@ -88,7 +90,7 @@ const Services = () => {
                 {services
                   .find((s) => s.id === selectedService)
                   ?.details.map((detail, index) => (
-                    <div key={index} className="flex items-start gap-3">
+                    <div key={index} className="flex items-start gap-3 glass p-3 rounded-lg">
                       <CheckCircle2 className="text-primary mt-1 flex-shrink-0" size={20} />
                       <p className="text-sm">{detail}</p>
                     </div>

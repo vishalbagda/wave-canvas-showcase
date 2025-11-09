@@ -30,8 +30,8 @@ const Skills = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <Card className="glass p-8">
-            <h3 className="text-2xl font-semibold mb-8 text-center">Frontend Development</h3>
+          <Card className="glass-strong p-8 border-primary/10 shadow-lg">
+            <h3 className="text-2xl font-semibold mb-8 text-center gradient-text">Frontend Development</h3>
             <div className="grid grid-cols-2 gap-6">
               {frontendSkills.map((skill) => (
                 <div key={skill.name} className="flex items-start gap-3">
@@ -45,8 +45,8 @@ const Skills = () => {
             </div>
           </Card>
 
-          <Card className="glass p-8">
-            <h3 className="text-2xl font-semibold mb-8 text-center">Backend & Languages</h3>
+          <Card className="glass-strong p-8 border-primary/10 shadow-lg">
+            <h3 className="text-2xl font-semibold mb-8 text-center gradient-text">Backend & Languages</h3>
             <div className="grid grid-cols-2 gap-6">
               {backendSkills.map((skill) => (
                 <div key={skill.name} className="flex items-start gap-3">

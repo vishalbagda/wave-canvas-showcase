@@ -21,28 +21,32 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold mb-8">Talk to me</h3>
+            <h3 className="text-2xl font-semibold mb-8 gradient-text">Talk to me</h3>
             
-            <Card className="glass p-6 hover-lift">
-              <Mail className="w-12 h-12 text-primary mb-4" />
+            <Card className="glass-strong p-6 hover-lift border-primary/10 shadow-lg">
+              <div className="glass p-3 rounded-full w-fit mb-4">
+                <Mail className="w-8 h-8 text-primary" />
+              </div>
               <h4 className="text-lg font-semibold mb-2">Email</h4>
-              <p className="text-muted-foreground mb-4">vishalbagda84@gmail.com</p>
+              <p className="text-muted-foreground mb-4 break-all">vishalbagda84@gmail.com</p>
               <Button 
                 variant="ghost" 
-                className="text-primary hover:text-primary/80 p-0"
+                className="text-primary hover:text-primary/80 p-0 font-semibold"
                 onClick={() => window.location.href = 'mailto:vishalbagda84@gmail.com'}
               >
                 Write me <Send className="ml-2" size={16} />
               </Button>
             </Card>
 
-            <Card className="glass p-6 hover-lift">
-              <MessageCircle className="w-12 h-12 text-primary mb-4" />
+            <Card className="glass-strong p-6 hover-lift border-primary/10 shadow-lg">
+              <div className="glass p-3 rounded-full w-fit mb-4">
+                <MessageCircle className="w-8 h-8 text-primary" />
+              </div>
               <h4 className="text-lg font-semibold mb-2">Phone</h4>
               <p className="text-muted-foreground mb-4">(+91) 99247-73326</p>
               <Button 
                 variant="ghost" 
-                className="text-primary hover:text-primary/80 p-0"
+                className="text-primary hover:text-primary/80 p-0 font-semibold"
                 onClick={() => window.location.href = 'tel:+919924773326'}
               >
                 Call me <Send className="ml-2" size={16} />
@@ -50,32 +54,32 @@ const Contact = () => {
             </Card>
           </div>
 
-          <div>
-            <h3 className="text-2xl font-semibold mb-8">Write me your project</h3>
+          <div className="glass-strong p-8 rounded-lg border-primary/10 shadow-lg">
+            <h3 className="text-2xl font-semibold mb-8 gradient-text">Write me your project</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">Name</label>
-                <Input placeholder="Insert your name" className="glass" />
+                <label className="text-sm text-muted-foreground mb-2 block font-semibold">Name</label>
+                <Input placeholder="Insert your name" className="glass-strong border-primary/10" />
               </div>
 
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">Mail</label>
-                <Input type="email" placeholder="Insert your email" className="glass" />
+                <label className="text-sm text-muted-foreground mb-2 block font-semibold">Mail</label>
+                <Input type="email" placeholder="Insert your email" className="glass-strong border-primary/10" />
               </div>
 
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">Project</label>
+                <label className="text-sm text-muted-foreground mb-2 block font-semibold">Project</label>
                 <Textarea
                   placeholder="Write your project"
-                  className="glass min-h-[150px]"
+                  className="glass-strong min-h-[150px] border-primary/10"
                 />
               </div>
 
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90"
+                className="w-full glass-strong bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-lg shadow-primary/20"
               >
                 Send Message <Send className="ml-2" size={18} />
               </Button>

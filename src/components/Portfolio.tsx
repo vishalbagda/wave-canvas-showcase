@@ -60,7 +60,7 @@ const Portfolio = () => {
             <Button
               key={f.id}
               variant={filter === f.id ? "default" : "outline"}
-              className={filter === f.id ? "bg-gradient-to-r from-primary to-secondary" : "glass"}
+              className={filter === f.id ? "glass-strong bg-gradient-to-r from-primary to-secondary shadow-lg shadow-primary/20" : "glass border-primary/10"}
               onClick={() => setFilter(f.id)}
             >
               {f.label}
@@ -70,18 +70,19 @@ const Portfolio = () => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {filteredProjects.map((project) => (
-            <Card key={project.id} className="glass overflow-hidden hover-lift group">
+            <Card key={project.id} className="glass-strong overflow-hidden hover-lift group border-primary/10 shadow-lg">
               <div className="relative overflow-hidden aspect-video">
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 smooth-transition z-10" />
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 smooth-transition"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 glass-strong">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
-                <Button variant="ghost" className="text-primary hover:text-primary/80 p-0">
+                <Button variant="ghost" className="text-primary hover:text-primary/80 p-0 font-semibold">
                   View Details <ArrowRight className="ml-2" size={18} />
                 </Button>
               </div>

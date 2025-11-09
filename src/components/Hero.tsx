@@ -40,7 +40,7 @@ const Hero = () => {
 
           <Button
             size="lg"
-            className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 rounded-full px-8"
+            className="glass-strong border-primary/20 bg-gradient-to-r from-primary to-secondary hover:opacity-90 rounded-full px-8 shadow-lg shadow-primary/20"
             onClick={() => scrollToSection("contact")}
           >
             Say Hello ✈️
@@ -51,7 +51,7 @@ const Hero = () => {
         <div className="flex justify-center md:justify-end">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-20 blur-3xl rounded-full" />
-            <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden water-effect">
+            <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden water-effect glass border-2 border-primary/20 shadow-2xl shadow-primary/10">
               <img
                 src={heroProfile}
                 alt="Vishal Bagda Profile"
