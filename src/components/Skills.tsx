@@ -3,21 +3,22 @@ import { CheckCircle2 } from "lucide-react";
 
 const Skills = () => {
   const frontendSkills = [
-    { name: "HTML", level: "Basic" },
-    { name: "CSS", level: "Advanced" },
-    { name: "JavaScript", level: "Intermediate" },
-    { name: "Bootstrap", level: "Intermediate" },
+    { name: "JavaScript", level: "Advanced" },
+    { name: "React.js", level: "Advanced" },
+    { name: "HTML/CSS", level: "Advanced" },
+    { name: "Tailwind", level: "Advanced" },
     { name: "Git", level: "Intermediate" },
-    { name: "React", level: "Intermediate" },
+    { name: "RESTful APIs", level: "Intermediate" },
   ];
 
   const backendSkills = [
-    { name: "PHP", level: "Intermediate" },
-    { name: "Node Js", level: "Basic" },
+    { name: "Node.js", level: "Advanced" },
+    { name: "Express.js", level: "Advanced" },
     { name: "Python", level: "Intermediate" },
+    { name: "Java", level: "Intermediate" },
+    { name: "C/C++", level: "Intermediate" },
+    { name: "MongoDB", level: "Advanced" },
     { name: "MySQL", level: "Intermediate" },
-    { name: "Firebase", level: "Intermediate" },
-    { name: "SQL", level: "Intermediate" },
   ];
 
   return (
@@ -30,7 +31,7 @@ const Skills = () => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <Card className="glass p-8">
-            <h3 className="text-2xl font-semibold mb-8 text-center">Frontend developer</h3>
+            <h3 className="text-2xl font-semibold mb-8 text-center">Frontend Development</h3>
             <div className="grid grid-cols-2 gap-6">
               {frontendSkills.map((skill) => (
                 <div key={skill.name} className="flex items-start gap-3">
@@ -45,7 +46,7 @@ const Skills = () => {
           </Card>
 
           <Card className="glass p-8">
-            <h3 className="text-2xl font-semibold mb-8 text-center">Backend developer</h3>
+            <h3 className="text-2xl font-semibold mb-8 text-center">Backend & Languages</h3>
             <div className="grid grid-cols-2 gap-6">
               {backendSkills.map((skill) => (
                 <div key={skill.name} className="flex items-start gap-3">

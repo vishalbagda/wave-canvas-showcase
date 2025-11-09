@@ -24,7 +24,7 @@ const Header = () => {
       }`}
     >
       <nav className="container mx-auto px-4 flex items-center justify-between">
-        <h1 className="text-2xl font-bold gradient-text">Smith</h1>
+        <h1 className="text-2xl font-bold gradient-text">Vishal Bagda</h1>
         
         <div className="hidden md:flex items-center gap-8">
           {["home", "about", "skills", "services", "portfolio", "contact"].map((item) => (

@@ -9,35 +9,39 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Web design",
-      category: "web",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      title: "Gym Reservation Bot",
+      category: "automation",
+      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop",
+      description: "Python, Selenium, Google Cloud Console",
     },
     {
       id: 2,
-      title: "App movil",
+      title: "Ticket Price Calculator App",
       category: "app",
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop",
+      description: "Java, Android Studio",
     },
     {
       id: 3,
-      title: "Brand design",
-      category: "design",
-      image: "https://images.unsplash.com/photo-1634942537034-2531766767d1?w=800&h=600&fit=crop",
+      title: "Transaction Management GUI",
+      category: "app",
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
+      description: "Java, JavaFX, Eclipse",
     },
     {
       id: 4,
-      title: "Web application",
-      category: "web",
-      image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&h=600&fit=crop",
+      title: "Data Analytics Dashboard",
+      category: "analytics",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      description: "Power BI, Data Visualization",
     },
   ];
 
   const filters = [
     { id: "all", label: "All" },
-    { id: "web", label: "Web" },
-    { id: "app", label: "App" },
-    { id: "design", label: "Design" },
+    { id: "automation", label: "Automation" },
+    { id: "app", label: "Applications" },
+    { id: "analytics", label: "Analytics" },
   ];
 
   const filteredProjects =
@@ -76,8 +80,9 @@ const Portfolio = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
                 <Button variant="ghost" className="text-primary hover:text-primary/80 p-0">
-                  Demo <ArrowRight className="ml-2" size={18} />
+                  View Details <ArrowRight className="ml-2" size={18} />
                 </Button>
               </div>
             </Card>

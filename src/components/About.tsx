@@ -11,29 +11,29 @@ const About = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <Card className="glass p-8 text-center hover-lift">
-            <div className="text-4xl mb-4">🎯</div>
-            <h3 className="text-xl font-semibold mb-2">Experience</h3>
-            <p className="text-muted-foreground">5+ Years Working</p>
+            <div className="text-4xl mb-4">🎓</div>
+            <h3 className="text-xl font-semibold mb-2">Education</h3>
+            <p className="text-muted-foreground">BSc Computer Science</p>
           </Card>
 
           <Card className="glass p-8 text-center hover-lift">
-            <div className="text-4xl mb-4">📦</div>
-            <h3 className="text-xl font-semibold mb-2">Completed</h3>
-            <p className="text-muted-foreground">50+ Projects</p>
+            <div className="text-4xl mb-4">💼</div>
+            <h3 className="text-xl font-semibold mb-2">Internships</h3>
+            <p className="text-muted-foreground">Data Analytics & Cybersecurity</p>
           </Card>
 
           <Card className="glass p-8 text-center hover-lift">
-            <div className="text-4xl mb-4">🎨</div>
-            <h3 className="text-xl font-semibold mb-2">Support</h3>
-            <p className="text-muted-foreground">24/7 Online</p>
+            <div className="text-4xl mb-4">🚀</div>
+            <h3 className="text-xl font-semibold mb-2">Projects</h3>
+            <p className="text-muted-foreground">Full Stack Applications</p>
           </Card>
         </div>
 
         <div className="mt-12 max-w-3xl mx-auto text-center">
           <p className="text-lg text-muted-foreground leading-relaxed">
-            I'm a passionate visual designer with expertise in creating beautiful and functional digital experiences. 
-            With over 5 years of experience, I've helped numerous clients bring their visions to life through 
-            thoughtful design and meticulous attention to detail.
+            I'm a Computer Science student at Sandip University (CGPA: 7.65) with hands-on experience in full-stack development, 
+            data analytics, and cybersecurity. I've completed internships at VOIS for Tech Program and Tata Consultancy Services, 
+            working on data visualization, security analysis, and building scalable web applications using modern technologies.
           </p>
         </div>
       </div>

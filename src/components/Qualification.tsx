@@ -8,27 +8,25 @@ const Qualification = () => {
 
   const education = [
     {
-      title: "Web Design",
-      subtitle: "Spain - Institute",
-      period: "2021 - Present",
-    },
-    {
-      title: "Web Development",
-      subtitle: "Spain - Institute",
-      period: "2018 - 2020",
+      title: "Bachelor of Science in Computer Science",
+      subtitle: "Sandip University, Nashik, Maharashtra",
+      period: "2023 - May 2026",
+      description: "CGPA: 7.65",
     },
   ];
 
   const experience = [
     {
-      title: "Art Director",
-      subtitle: "Spain - Institute",
-      period: "2020 - 2021",
+      title: "Cybersecurity Analyst",
+      subtitle: "Tata Consultancy Services (Virtual)",
+      period: "Nov 2024",
+      description: "IAM, Security Analysis, Compliance",
     },
     {
-      title: "UX Expert",
-      subtitle: "Spain - Institute",
-      period: "2017 - 2018",
+      title: "Data Analytics Intern",
+      subtitle: "VOIS for Tech Program (Remote)",
+      period: "Jul 2024 - Aug 2024",
+      description: "Power BI, Data Visualization, Business Intelligence",
     },
   ];
 
@@ -74,8 +72,11 @@ const Qualification = () => {
               >
                 <Card className={`glass p-6 flex-1 ${index % 2 === 0 ? "text-right" : ""}`}>
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground mb-3">{item.subtitle}</p>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground justify-end">
+                  <p className="text-muted-foreground mb-2">{item.subtitle}</p>
+                  {item.description && (
+                    <p className="text-sm text-primary mb-3">{item.description}</p>
+                  )}
+                  <div className={`flex items-center gap-2 text-sm text-muted-foreground ${index % 2 === 0 ? "justify-end" : ""}`}>
                     <Calendar size={16} />
                     <span>{item.period}</span>
                   </div>

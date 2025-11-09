@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="py-12 border-t">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-8">
-          <h2 className="text-3xl font-bold gradient-text">Smith</h2>
+          <h2 className="text-3xl font-bold gradient-text">Vishal Bagda</h2>
           
           <div className="flex justify-center gap-8 flex-wrap">
             {["about", "portfolio", "services"].map((item) => (
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
 
           <p className="text-sm text-muted-foreground">
-            © Crypticalcoder. All rights reserved
+            © 2024 Vishal Bagda. All rights reserved
           </p>
         </div>
       </div>

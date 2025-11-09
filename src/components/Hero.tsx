@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Instagram, Dribbble, Github, ChevronDown } from "lucide-react";
+import { Linkedin, Github, Code, ChevronDown } from "lucide-react";
 import heroProfile from "@/assets/hero-profile.jpg";
 
 const Hero = () => {
@@ -13,14 +13,14 @@ const Hero = () => {
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left side - Social icons */}
         <div className="hidden md:flex flex-col gap-6 absolute left-8">
-          <a href="#" className="text-foreground hover:text-primary smooth-transition">
-            <Instagram size={24} />
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary smooth-transition">
+            <Linkedin size={24} />
           </a>
-          <a href="#" className="text-foreground hover:text-primary smooth-transition">
-            <Dribbble size={24} />
-          </a>
-          <a href="#" className="text-foreground hover:text-primary smooth-transition">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary smooth-transition">
             <Github size={24} />
+          </a>
+          <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary smooth-transition">
+            <Code size={24} />
           </a>
         </div>
 
@@ -28,14 +28,14 @@ const Hero = () => {
         <div className="space-y-6">
           <div className="space-y-2">
             <h2 className="text-5xl md:text-7xl font-bold">
-              John Smith <span className="wave">👋</span>
+              Vishal Bagda <span className="wave">👋</span>
             </h2>
             <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full" />
-            <p className="text-2xl text-muted-foreground">Visual Designer</p>
+            <p className="text-2xl text-muted-foreground">Full Stack Developer</p>
           </div>
 
           <p className="text-lg text-muted-foreground max-w-md">
-            I'm creative designer based in New York, and I'm very passionate and dedicated to my work.
+            Computer Science student at Sandip University with expertise in full-stack development, data analytics, and cybersecurity. Passionate about building innovative solutions.
           </p>
 
           <Button
@@ -54,7 +54,7 @@ const Hero = () => {
             <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden water-effect">
               <img
                 src={heroProfile}
-                alt="John Smith Profile"
+                alt="Vishal Bagda Profile"
                 className="w-full h-full object-cover"
               />
             </div>

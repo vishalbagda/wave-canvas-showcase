@@ -26,18 +26,26 @@ const Contact = () => {
             <Card className="glass p-6 hover-lift">
               <Mail className="w-12 h-12 text-primary mb-4" />
               <h4 className="text-lg font-semibold mb-2">Email</h4>
-              <p className="text-muted-foreground mb-4">user@gmail.com</p>
-              <Button variant="ghost" className="text-primary hover:text-primary/80 p-0">
+              <p className="text-muted-foreground mb-4">vishalbagda84@gmail.com</p>
+              <Button 
+                variant="ghost" 
+                className="text-primary hover:text-primary/80 p-0"
+                onClick={() => window.location.href = 'mailto:vishalbagda84@gmail.com'}
+              >
                 Write me <Send className="ml-2" size={16} />
               </Button>
             </Card>
 
             <Card className="glass p-6 hover-lift">
               <MessageCircle className="w-12 h-12 text-primary mb-4" />
-              <h4 className="text-lg font-semibold mb-2">Messenger</h4>
-              <p className="text-muted-foreground mb-4">user.fb123</p>
-              <Button variant="ghost" className="text-primary hover:text-primary/80 p-0">
-                Write me <Send className="ml-2" size={16} />
+              <h4 className="text-lg font-semibold mb-2">Phone</h4>
+              <p className="text-muted-foreground mb-4">(+91) 99247-73326</p>
+              <Button 
+                variant="ghost" 
+                className="text-primary hover:text-primary/80 p-0"
+                onClick={() => window.location.href = 'tel:+919924773326'}
+              >
+                Call me <Send className="ml-2" size={16} />
               </Button>
             </Card>
           </div>
