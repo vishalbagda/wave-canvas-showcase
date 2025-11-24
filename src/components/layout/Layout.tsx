@@ -8,6 +8,10 @@ interface LayoutProps {
 }
 
 const Navbar = () => {
+    const scrollTo = (id: string) => {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <motion.nav
             initial={{ y: -100, opacity: 0 }}
@@ -16,9 +20,13 @@ const Navbar = () => {
             className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex justify-between items-center glass-strong"
         >
             <div className="text-xl font-bold gradient-text font-sans">Portfolio</div>
-            <div className="flex gap-4">
-                <SoundButton variant="ghost" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>Projects</SoundButton>
-                <SoundButton variant="ghost" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Contact</SoundButton>
+            <div className="hidden md:flex gap-6">
+                <SoundButton variant="ghost" onClick={() => scrollTo('home')}>Home</SoundButton>
+                <SoundButton variant="ghost" onClick={() => scrollTo('about')}>About</SoundButton>
+                <SoundButton variant="ghost" onClick={() => scrollTo('skills')}>Skills</SoundButton>
+                <SoundButton variant="ghost" onClick={() => scrollTo('services')}>Services</SoundButton>
+                <SoundButton variant="ghost" onClick={() => scrollTo('projects')}>Portfolio</SoundButton>
+                <SoundButton variant="ghost" onClick={() => scrollTo('contact')}>Contact</SoundButton>
             </div>
         </motion.nav>
     );
