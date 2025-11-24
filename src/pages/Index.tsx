@@ -1,28 +1,19 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Services from "@/components/Services";
-import Portfolio from "@/components/Portfolio";
-import Qualification from "@/components/Qualification";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import ScrollToTop from "@/components/ScrollToTop";
+import { Layout } from "@/components/layout/Layout";
+import { Hero } from "@/components/sections/Hero";
+import { Projects } from "@/components/sections/Projects";
+import { Contact } from "@/components/sections/Contact";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Header />
+    <Layout>
       <Hero />
-      <About />
-      <Skills />
-      <Services />
-      <Qualification />
-      <Portfolio />
+      <Projects />
       <Contact />
-      <Footer />
-      <ScrollToTop />
-    </div>
+
+      <footer className="py-8 text-center text-muted-foreground text-sm glass-strong mt-20">
+        <p>© {new Date().getFullYear()} Portfolio. Crafted with passion.</p>
+      </footer>
+    </Layout>
   );
 };
 
